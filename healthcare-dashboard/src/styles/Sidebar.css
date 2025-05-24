@@ -1,0 +1,54 @@
+.sidebar-component {
+  background-color: #f8f9fa; /* Light grey background, adjust as per design */
+  padding: 20px;
+  height: 100%; /* Ensure it fills the app-sidebar container height */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-heading {
+  font-size: 1.2em;
+  color: #495057; /* Dark grey color for heading */
+  margin-bottom: 15px;
+  padding-left: 10px; /* Align with nav items if they have padding */
+}
+
+.sidebar-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav-item {
+  margin-bottom: 5px; /* Space between nav items */
+}
+
+.sidebar-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px; /* Padding for each nav link */
+  text-decoration: none;
+  color: #343a40; /* Default link color */
+  border-radius: 5px; /* Slightly rounded corners for links */
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.sidebar-nav-link:hover {
+  background-color: #e9ecef; /* Light background on hover */
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Style for an "active" link - for now, just an example, not dynamic */
+/* You might apply this to the "Dashboard" link by default if needed */
+.sidebar-nav-link.active {
+  background-color: #007bff; /* Blue background for active link */
+  color: white;
+  font-weight: bold;
+}
+
+/* Placeholder for icon styling if using a library or svgs */
+.sidebar-nav-link .icon { /* Assuming icons will have a class 'icon' */
+  margin-right: 10px;
+  /* Add other icon specific styles like size, color if not handled by icon itself */
+}

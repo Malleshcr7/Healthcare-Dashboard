@@ -1,0 +1,39 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif; /* Basic font, will be refined later */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: #f0f0f0; /* Placeholder color */
+  padding: 1rem;
+  border-bottom: 1px solid #ccc; /* Placeholder border */
+}
+
+.app-body {
+  display: flex;
+  flex-grow: 1; /* Takes remaining vertical space */
+  overflow: hidden; /* Prevent overall page scroll if content overflows sections */
+}
+
+.app-sidebar {
+  width: 250px; /* Example fixed width, adjust based on design */
+  background-color: #e0e0e0; /* Placeholder color */
+  padding: 1rem;
+  border-right: 1px solid #ccc; /* Placeholder border */
+  overflow-y: auto; /* Scroll sidebar if content exceeds height */
+}
+
+.app-main-content {
+  flex-grow: 1; /* Takes remaining horizontal space */
+  padding: 1rem;
+  background-color: #ffffff; /* Placeholder color */
+  overflow-y: auto; /* Scroll main content if it exceeds height */
+}

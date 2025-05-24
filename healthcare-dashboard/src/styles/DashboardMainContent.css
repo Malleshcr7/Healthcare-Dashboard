@@ -1,0 +1,57 @@
+.dashboard-main-content-component {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between all sections */
+  padding: 20px;
+  background-color: #f4f7fA; /* Light grey/blue background from design */
+  height: 100%; /* Ensure it takes full height of its container */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Placeholder styling for visibility */
+.dashboard-overview-placeholder,
+.calendar-view-placeholder,
+.upcoming-schedule-placeholder,
+.activity-feed-placeholder {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  border-radius: 8px;
+  border: 1px solid #e0e0e0; /* Light border */
+}
+
+/* Layout based on the design:
+   - DashboardOverview and CalendarView in the top row.
+   - UpcomingSchedule and ActivityFeed in the bottom row.
+   - DashboardOverview and UpcomingSchedule appear wider than CalendarView and ActivityFeed.
+*/
+
+.dashboard-overview-placeholder {
+  flex: 2 1 60%; /* Takes more space, allows shrinking, base 60% */
+  min-height: 300px; /* Example height */
+}
+
+.calendar-view-placeholder {
+  flex: 1 1 35%; /* Takes less space, allows shrinking, base 35% */
+  min-height: 300px; /* Example height */
+}
+
+.upcoming-schedule-placeholder {
+  flex: 2 1 60%; /* Similar to DashboardOverview */
+  min-height: 250px; /* Example height */
+}
+
+.activity-feed-placeholder {
+  flex: 1 1 35%; /* Similar to CalendarView */
+  min-height: 250px; /* Example height */
+}
+
+/* Responsive adjustments (optional for now, but good practice) */
+@media (max-width: 992px) { /* Example breakpoint for tablets */
+  .dashboard-overview-placeholder,
+  .calendar-view-placeholder,
+  .upcoming-schedule-placeholder,
+  .activity-feed-placeholder {
+    flex-basis: 100%; /* Stack them on smaller screens */
+  }
+}

@@ -1,0 +1,81 @@
+.header-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Assuming white background from design */
+  border-bottom: 1px solid #e0e0e0; /* Light grey border */
+  height: 60px; /* Approximate height from design */
+}
+
+.header-logo {
+  font-size: 1.5em; /* Larger font for the logo */
+  font-weight: bold;
+  color: #007bff; /* Blue color similar to design */
+}
+
+.header-search-container {
+  flex-grow: 0.5; /* Allow search to take some space but not too much */
+  display: flex;
+  align-items: center;
+}
+
+.header-search {
+  width: 100%; /* Take full width of its container */
+  padding: 10px 15px;
+  border: 1px solid #ced4da; /* Light grey border */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 0.9em;
+  background-color: #f8f9fa; /* Very light grey background */
+}
+
+.header-search::placeholder {
+  color: #6c757d; /* Muted placeholder text color */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between action items */
+}
+
+.header-add-button {
+  padding: 8px 15px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-add-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.header-notification-icon {
+  font-size: 1.5em; /* Adjust size as needed for the icon */
+  color: #495057; /* Dark grey for icon */
+  cursor: pointer;
+}
+
+.header-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between avatar and name */
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular avatar */
+  object-fit: cover; /* Ensure image covers the area well */
+  border: 2px solid #007bff; /* Blue border around avatar */
+}
+
+.user-name {
+  font-size: 0.9em;
+  color: #343a40; /* Dark text color for name */
+  font-weight: 500;
+}
